@@ -1,0 +1,65 @@
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Musique</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+ </head>
+ <body>
+  <header>
+   <h2>Music player</h2>
+  </header>
+  <main>
+   <h1>Setting Sun</h1>
+   <h2>You'll Never Get To Heaven</h2>
+   <img src="Photo.img" id="photo">
+   <div class="progress-bar">
+    <div class="progress"></div>
+    <div class="progress-button"></div>
+   </div>
+   <button id="Play">▶</button>
+   <audio id="audio" src="Musique.mp3"></audio>
+   <script>
+    const button= document.getElementById("Play");
+    const progress= document.querySelector(".progress");
+    const progressButton= document.querySelector(".progress-button");
+    const audio= document.getElementById("audio");
+
+     let clique= false;
+     let intervalId;
+
+     button.onclick= function(){
+     clique= !clique;
+
+     if (clique){
+      button.textContent="❚❚";
+      audio.play();
+
+      intervalId=
+      setInterval(()=>{
+      let width=
+      (audio.currentTime/audio.duration)*100;
+      progress.style.width= width + "%";
+
+      progressButton.style.left= `calc(${width}% - 5px)`;
+
+       if (audio.ended){
+       clearInterval(intervalId);
+       button.textContent= "▶";
+       }
+      }, 50);
+     
+     } else{
+      button.textContent= "▶";
+      audio.pause();
+
+     clearInterval(intervalId);
+     }
+    }
+   </script>
+  </main>
+  <footer>
+   <h2>Music player</h2>
+  </footer>
+ </body
+</html>
