@@ -1,0 +1,98 @@
+header h2{
+font-family: sans-serif;
+text-align: center;
+}
+
+main h2{
+text-align: center;
+color: #FFC0CB;
+font-size: 200%;
+text-shadow: 0 4px 10px;
+}
+
+main{
+background-color: #FFF0F3;
+}
+
+main h1{
+text-align: center;
+font-size: 75px;
+font-family: 'Quicksand', sans-serif;
+color: #FF77A9;
+margin-top: 20px;
+text-shadow: 0 4px 10px;
+}
+
+img{
+width: 300px;
+display: block;
+margin: auto;
+margin-bottom: 50px;
+border: 5px solid #FF77A9;
+border-radius: 10%;
+justify-content: center;
+align-items: center;
+box-shadow: 0 4px 10px;
+}
+
+div{
+display: block;
+margin: auto;
+}
+
+.progress-bar{
+width: 500px;
+height: 10px;
+background-color: white;
+overflow: visible;
+border-radius: 5px;
+position: relative;
+margin-bottom: 20px;
+}
+
+.progress{
+width: 0%;
+height: 100%;
+background-color: #FFC0CB;
+border-radius: 5px;
+left: 0%;
+position: absolute;
+}
+
+.progress-button{
+width: 20px;
+height: 20px;
+background-color: #FF77A9;
+border-radius: 50%;
+position: absolute;
+top: -50%;
+left: -5px;
+z-index: 2;
+}
+
+button{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+font-size: 50px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #FFC0CB;
+color: white;
+margin: auto;
+margin-bottom: 50px;
+}
+
+footer{
+font-family: sans-serif;
+text-align: center;
+margin-top: -50px;
+box-shadow: 0 4px 10px;
+}
+
+header{
+box-shadow: 0 4px 10px;
+margin-bottom: -10px;
+} 
